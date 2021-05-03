@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hospital Bed Availability</title>
+</head>
+<body bgcolor="#ddffff">
+
+<img src="https://innovationyourself.com/wp-content/uploads/2020/07/WhatsApp-Image-2020-07-24-at-12.18.03-AM.jpeg" width="15%" height="15%" align="right" /><u><h1 align="center">Hospital Bed Availability</h1></u><br>
+<img src="https://www.pinghd.com/wp-content/uploads/2021/02/Wear-a-mask-covid-19.png" width="75%" height="75%" />
+<img src="https://www.pinghd.com/wp-content/uploads/2021/02/wash-hands-digitial-signage-landscape.jpg" width="75%" height="75%" />
+<img src="https://www.pinghd.com/wp-content/uploads/2021/02/do-the-five-LS.jpg" width="75%" height="75%" />
+<img src="https://www.pinghd.com/wp-content/uploads/2021/02/protect-yourself-covid-19-digital-signage-template.jpg" width="75%" height="75%" />
+
+
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.1/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          selector: "#webchat",
+          initPayload: "/greet",
+          customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+          socketUrl: "http://localhost:5005",
+          socketPath: "/socket.io/",
+          title: "Hospital Bed Availability",
+          subtitle: "Find one, Save Life...",
+          params: {"storage": "session"}
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+</body>
+</html>
