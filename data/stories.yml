@@ -1,0 +1,26 @@
+version: "2.0"
+
+stories:
+
+- story: happy icu vacant beds path
+  steps:
+  - intent: affirm
+  - action: utter_beds_type
+
+- story: happy non icu vacant beds path
+  steps:
+  - intent: ICU_Vacant_beds
+  - action: utter_sure
+  - action: action_check_vacant_beds
+
+- story: happy non icu vacant beds path
+  steps:
+  - intent: Non_ICU_Vacant_beds
+  - action: utter_sure
+  - action: action_check_non_icu_vacant_beds
+
+- story: deny path
+  steps:
+  - intent: deny
+  - action: utter_goodbye
+
