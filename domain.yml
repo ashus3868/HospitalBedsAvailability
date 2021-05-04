@@ -42,7 +42,7 @@ responses:
     - text: "Also check this link for area wise requirements: [COVID ARMY](https://covid.army/)"
 
 actions:
-  - action_check_vacant_beds
+  - action_check_icu_vacant_beds
   - action_check_non_icu_vacant_beds
 session_config:
   session_expiration_time: 60
