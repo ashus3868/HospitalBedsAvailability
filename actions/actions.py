@@ -18,7 +18,7 @@ from main import bed_availability
 class ActionCheckVacantBeds(Action):
 
     def name(self) -> Text:
-        return "action_check_vacant_beds"
+        return "action_check_non_icu_vacant_beds"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -51,7 +51,7 @@ Location: "[{}](https://www.google.co.in/maps/search/{})"  ,
 class ActionCheckVacentBeds(Action):
 
     def name(self) -> Text:
-        return "action_check_non_icu_vacant_beds"
+        return "action_check_icu_vacant_beds"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
